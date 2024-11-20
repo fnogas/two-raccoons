@@ -50,7 +50,7 @@ body {
 .raccoon-cursor {
     width: 20px;
     height: 20px;
-    background: url('raccoon-cursor.svg') no-repeat center/contain;
+    background: url('cursor.png') no-repeat center/contain;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
