@@ -43,6 +43,7 @@ body {
 
 .raccoon-loader img {
     width: 100px;
+    height: auto;
     animation: bounce 1s infinite;
 }
 
@@ -50,7 +51,7 @@ body {
 .raccoon-cursor {
     width: 20px;
     height: 20px;
-    background: url('cursor.png') no-repeat center/contain;
+    background: url('images/raccoon.png') no-repeat center/contain;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
@@ -90,6 +91,7 @@ nav {
 
 .logo img {
     height: 40px;
+    width: auto;
 }
 
 .nav-links {
