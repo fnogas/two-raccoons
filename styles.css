@@ -43,7 +43,6 @@ body {
 
 .raccoon-loader img {
     width: 100px;
-    height: auto;
     animation: bounce 1s infinite;
 }
 
@@ -51,7 +50,7 @@ body {
 .raccoon-cursor {
     width: 20px;
     height: 20px;
-    background: url('images/raccoon.png') no-repeat center/contain;
+    background: url('images/raccoon-cursor.png') no-repeat center/contain;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
@@ -91,7 +90,6 @@ nav {
 
 .logo img {
     height: 40px;
-    width: auto;
 }
 
 .nav-links {
@@ -104,9 +102,45 @@ nav {
     color: var(--dark);
     text-decoration: none;
     font-weight: 500;
-    transition:
+    transition: color 0.3s;
+}
 
-   /* About Section */
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient);
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* About Section */
 .about {
     padding: 6rem 2rem;
     max-width: 1200px;
@@ -417,4 +451,4 @@ footer {
 
 .visible {
     display: block;
-} 
+}
