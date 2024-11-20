@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxTrad - Locução, Tradução e Localização</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VoxTrad</div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Soluções Completas em Locução, Tradução e Localização</h1>
+            <p>Transformamos sua mensagem para alcançar o mundo todo</p>
+            <a href="#orcamento" class="cta-button">Solicite um Orçamento</a>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Locução</h3>
+                    <p>Vozes profissionais para comerciais, documentários e audiobooks</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tradução</h3>
+                    <p>Tradução precisa de documentos, websites e conteúdo digital</p>
+                </div>
+                <div class="service-card">
+                    <h3>Localização</h3>
+                    <p>Adaptação cultural de conteúdo para mercados específicos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Samples de Locução</h2>
+            <div class="audio-gallery">
+                <div class="audio-card">
+                    <h3>Comercial</h3>
+                    <audio controls>
+                        <source src="audio/comercial-sample.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Locução comercial para TV</p>
+                </div>
+                <div class="audio-card">
+                    <h3>Institucional</h3>
+                    <audio controls>
+                        <source src="audio/institucional-sample.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Vídeo institucional corporativo</p>
+                </div>
+                <div class="audio-card">
+                    <h3>Audiobook</h3>
+                    <audio controls>
+                        <source src="audio/audiobook-sample.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <p>Narração de livro</p>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h3>Siga-nos nas Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="orcamento">
+            <h2>Solicite um Orçamento</h2>
+            <div class="orcamento-container">
+                <form id="orcamentoForm" class="orcamento-form">
+                    <div class="form-group">
+                        <label>Tipo de Serviço:</label>
+                        <select id="tipoServico" required>
+                            <option value="">Selecione...</option>
+                            <option value="locucao">Locução</option>
+                            <option value="traducao">Tradução</option>
+                            <option value="localizacao">Localização</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="locucaoOptions" style="display: none;">
+                        <label>Tipo de Locução:</label>
+                        <select>
+                            <option value="comercial">Comercial</option>
+                            <option value="institucional">Institucional</option>
+                            <option value="audiobook">Audiobook</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Duração/Quantidade:</label>
+                        <input type="number" placeholder="Minutos ou Palavras" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prazo Desejado:</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Detalhes do Projeto:</label>
+                        <textarea placeholder="Descreva seu projeto..." required></textarea>
+                    </div>
+
+                    <button type="submit">Calcular Orçamento</button>
+                </form>
+
+                <div id="orcamentoResult" class="orcamento-result">
+                    <h3>Estimativa de Orçamento</h3>
+                    <div class="result-content">
+                        <p>O valor estimado será exibido aqui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <select>
+                    <option value="">Selecione o Serviço</option>
+                    <option value="locucao">Locução</option>
+                    <option value="traducao">Tradução</option>
+                    <option value="localizacao">Localização</option>
+                </select>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VoxTrad - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre seus serviços." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Fale Conosco!</span>
+        <span class="notification-badge">1</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
