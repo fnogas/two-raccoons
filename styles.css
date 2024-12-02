@@ -88,8 +88,16 @@ nav {
     align-items: center;
 }
 
+/* No seu styles.css, adicione ou atualize: */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 40px;
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
