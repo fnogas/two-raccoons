@@ -246,46 +246,19 @@ nav {
     background: var(--light);
 }
 
-.voice-demos {
+.demo-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 3rem auto 0;
 }
 
-/* Para telas grandes - 3 colunas */
-@media (min-width: 1200px) {
-    .voice-demos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Para telas médias - 2 colunas */
-@media (max-width: 1199px) and (min-width: 768px) {
-    .voice-demos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Para mobile - 1 coluna */
-@media (max-width: 767px) {
-    .voice-demos {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Melhorar espaçamento */
 .demo-card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .custom-player {
