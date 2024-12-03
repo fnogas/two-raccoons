@@ -274,12 +274,13 @@ nav {
 }
 
 /* Melhorar espaçamento */
+}
+
 .demo-card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .demo-card:hover {
