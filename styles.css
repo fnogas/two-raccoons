@@ -239,11 +239,31 @@ nav {
 }
 
 .demo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
-    margin: 3rem auto 0;
+    padding: 2rem 0;
+}
+
+/* Para forçar 4 colunas em telas grandes */
+@media (min-width: 1200px) {
+    .voice-demos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Para 2 colunas em telas médias */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .voice-demos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para 1 coluna em mobile */
+@media (max-width: 767px) {
+    .voice-demos {
+        grid-template-columns: 1fr;
+    }
 }
 
 .demo-card {
