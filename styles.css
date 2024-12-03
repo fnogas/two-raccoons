@@ -88,16 +88,8 @@ nav {
     align-items: center;
 }
 
-/* No seu styles.css, adicione ou atualize: */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
-    height: 120px;
-    width: auto;
-    display: block;
+    height: 40px;
 }
 
 .nav-links {
@@ -241,11 +233,17 @@ nav {
 }
 
 /* Voice Demos Section */
-.voice-demos {
+.demos {
+    padding: 6rem 2rem;
+    background: var(--light);
+}
+
+.demo-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
 }
 
 .demo-card {
@@ -253,35 +251,41 @@ nav {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-player {
+    margin-top: 1.5rem;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play-btn {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
     transition: transform 0.3s;
 }
 
-.demo-card:hover {
-    transform: translateY(-5px);
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #eee;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
-.demo-card h3 {
-    color: var(--primary);
-    margin-bottom: 0.5rem;
-}
-
-.demo-card p {
-    color: #666;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-}
-
-/* Responsividade */
-@media (max-width: 1024px) {
-    .voice-demos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .voice-demos {
-        grid-template-columns: 1fr;
-    }
+.progress {
+    height: 100%;
+    background: var(--secondary);
+    width: 0;
 }
 
 /* Contact Section */
