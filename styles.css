@@ -184,11 +184,10 @@ nav {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta automaticamente */
     gap: 2rem;
-    max-width: 1200px;
-    margin: 3rem auto 0;
+
 }
 
 .service-card {
