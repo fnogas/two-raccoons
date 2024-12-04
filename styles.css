@@ -187,6 +187,7 @@ nav {
  display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta automaticamente */
     gap: 2rem;
+    padding: 2rem 0;
 
 }
 
