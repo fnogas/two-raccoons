@@ -181,6 +181,10 @@ nav {
 .services {
     padding: 6rem 2rem;
     background: var(--light);
+    }
+
+.service-card p {
+    margin-bottom: 1rem; /* Espaço abaixo do parágrafo */
 }
 
 .services-grid {
