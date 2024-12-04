@@ -1,8 +1,8 @@
 /* Variáveis e Reset */
 :root {
     --primary: #2C3A47;    /* Cinza escuro */
-    --secondary: #8B3CCC;  /* Roxo */
-    --accent: #FBDB3E;     /* Amarelo */
+    --secondary: #8B3FCA;  /* Roxo */
+    --accent: #FFDC3C;     /* Amarelo */
     --dark: #1E272E;       /* Texto escuro */
     --light: #F7F7F7;      /* Fundo claro */
     --gradient: linear-gradient(135deg, var(--secondary), var(--accent));
