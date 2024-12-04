@@ -89,7 +89,7 @@ nav {
 }
 
 .logo img {
-    height: 120px;
+    height: 100px;
 }
 
 .nav-links {
@@ -293,7 +293,7 @@ nav {
 .demo-card p {
     color: #666;
     margin-bottom: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     position: relative;
     z-index: 1;
 }
