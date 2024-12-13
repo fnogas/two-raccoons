@@ -21,8 +21,8 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--light);
-    background: var(--dark);
+    color: var(--dark);
+    background: var(--light);
     overflow-x: hidden;
 }
 
