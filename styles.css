@@ -42,7 +42,7 @@ body {
 }
 
 .raccoon-loader img {
-    width: 300px;
+    width: 1000px;
     animation: bounce 1s infinite;
 }
 
