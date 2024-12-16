@@ -571,3 +571,32 @@ footer {
 .visible {
     display: block;
 }
+/* Reset de margens e padding do body politica de privacidade*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do contêiner */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para títulos e parágrafos */
+h1, h2, p {
+    margin: 20px 0;
+}
+
+/* Outros estilos do seu site */
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
