@@ -175,7 +175,7 @@ nav {
 
 .timeline-item:hover {
     transform: translateY(-5px);
-    background-color: #8B3FCA; /* Cor de fundo ao passar o mouse (roxo) */
+    background: var(--gradient); /* Cor de fundo ao passar o mouse (gradiente) */
     color: #fff; /* Muda a cor do texto para branco para melhor contraste */
 }  
 
