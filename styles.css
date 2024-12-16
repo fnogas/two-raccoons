@@ -9,23 +9,9 @@
 }
 
 * {
-    .about {
-    padding: 6rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin-top: 3rem;
-}
-
-.about-text h3 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(-- secondary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -35,10 +21,11 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(-- light);
-    background: var(-- dark);
+    color: var(--dark);
+    background: var(--light);
     overflow-x: hidden;
 }
+
 
 /* Loader */
 .loader {
