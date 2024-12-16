@@ -181,9 +181,10 @@ nav {
 
 /* Services Section */
 .services {
-    padding: 6rem 2rem;
-    background: var(--light);
-    }
+    background: var(--dark);
+    color: white;
+    padding: 4rem 2rem 2rem;
+}
 
 .service-card p {
     margin-bottom: 1rem; /* Espaço abaixo do parágrafo */
@@ -483,7 +484,7 @@ footer {
 }
 
 .footer-content {
-    max-width: 100px;
+    max-width: 50px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
