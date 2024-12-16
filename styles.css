@@ -166,18 +166,18 @@ nav {
 }
 
 .timeline-item {
-    background-color: #f9f9f9; /* Cor de fundo padrão (branco) */
-    border: 1px solid #ddd; /* Borda do box */
-    padding: 15px;
-    margin: 10px 0; /* Espaçamento entre os boxes */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Transição suave */
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
 .timeline-item:hover {
+    transform: translateY(-5px);
     background-color: #8B3FCA; /* Cor de fundo ao passar o mouse (roxo) */
     color: #fff; /* Muda a cor do texto para branco para melhor contraste */
-}
+}  
 
 /* Services Section */
 .services {
