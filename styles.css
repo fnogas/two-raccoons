@@ -305,7 +305,7 @@ nav {
 .demo-card h3 {
     color: var(--primary);
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     position: relative;
     z-index: 1;
 }
