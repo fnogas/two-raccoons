@@ -265,29 +265,22 @@ nav {
 }
 
 .demo-grid {
-        display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Força 3 colunas */
-    gap: 20px; /* Espaçamento entre os itens, se necessário */
-}
-
-/* Para telas grandes - 3 colunas */
-@media (min-width: 1200px) {
-    .voice-demos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    display: grid; /* Ativa o grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+    gap: 20px; /* Espaçamento entre os cards */
 }
 
 /* Para telas médias - 2 colunas */
 @media (max-width: 1199px) and (min-width: 768px) {
-    .voice-demos {
-        grid-template-columns: repeat(2, 1fr);
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
     }
 }
 
 /* Para mobile - 1 coluna */
 @media (max-width: 767px) {
-    .voice-demos {
-        grid-template-columns: 1fr;
+    .demo-grid {
+        grid-template-columns: 1fr; /* 1 coluna */
     }
 }
 
