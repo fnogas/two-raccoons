@@ -242,8 +242,12 @@ nav {
 
 .card-front {
     background: white;
-    color: var(--dark);
+    color: var(--dark); /* Cor padrão para o texto */
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-front h3 {
+    color: #8B3FCA; /* Cor roxa para o h3 */
 }
 
 .card-back {
