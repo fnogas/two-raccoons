@@ -263,7 +263,7 @@ nav {
 
 .card-front {
     background: white;
-    color: var(--dark);
+    color: var(--secondary);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
