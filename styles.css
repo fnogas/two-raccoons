@@ -29,52 +29,47 @@ body {
 
 /* Loader */
 .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa toda a altura da tela */
-    position: relative; /* Para posicionar as imagens */
+    z-index: 1000;
+    transition: opacity 0.5s;
 }
 
-.image-container {
-    position: absolute; /* Para permitir o movimento em direções opostas */
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: 100px; /* Ajuste o tamanho conforme necessário */
-    overflow: hidden; /* Para esconder partes da imagem que saem do contêiner */
+.raccoon-loader img {
+    width: 300px;
+    animation: bounce 1s infinite;
 }
 
-.left {
-    animation: moveLeft 2s linear infinite; /* Animação para a imagem da esquerda */
+/* Cursor Personalizado */
+.raccoon-cursor {
+    width: 20px;
+    height: 20px;
+    background: url('images/raccoon-cursor.png') no-repeat center/contain;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s;
 }
 
-.right {
-    animation: moveRight 2s linear infinite; /* Animação para a imagem da direita */
+/* Formas Geométricas */
+.creative-shapes .shape {
+    position: fixed;
+    opacity: 0.1;
+    pointer-events: none;
 }
 
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0); /* Posição inicial */
-    }
-    50% {
-        transform: translateX(-100px); /* Move para a esquerda */
-    }
-    100% {
-        transform: translateX(0); /* Retorna à posição inicial */
-    }
-}
+.shape-1 { top: 10%; left: 5%; }
+.shape-2 { top: 50%; right: 10%; }
+.shape-3 { bottom: 20%; left: 15%; }
 
-@keyframes moveRight {
-    0% {
-        transform: translateX(0); /* Posição inicial */
-    }
-    50% {
-        transform: translateX(100px); /* Move para a direita */
-    }
-    100% {
-        transform: translateX(0); /* Retorna à posição inicial */
-    }
 }
-
 
 /* Header e Navegação */
 header {
