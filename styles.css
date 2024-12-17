@@ -29,22 +29,50 @@ body {
 
 /* Loader */
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    transition: opacity 0.5s;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    position: relative; /* Para posicionar as imagens */
 }
 
-.raccoon-loader img {
-    width: 300px;
-    animation: bounce 1s infinite;
+.image-container {
+    position: absolute; /* Para permitir o movimento em direções opostas */
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+    overflow: hidden; /* Para esconder partes da imagem que saem do contêiner */
+}
+
+.left {
+    animation: moveLeft 2s linear infinite; /* Animação para a imagem da esquerda */
+}
+
+.right {
+    animation: moveRight 2s linear infinite; /* Animação para a imagem da direita */
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateX(-100px); /* Move para a esquerda */
+    }
+    100% {
+        transform: translateX(0); /* Retorna à posição inicial */
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateX(100px); /* Move para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Retorna à posição inicial */
+    }
 }
 
 /* Cursor Personalizado */
