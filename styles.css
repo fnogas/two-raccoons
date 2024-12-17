@@ -69,8 +69,6 @@ body {
 .shape-2 { top: 50%; right: 10%; }
 .shape-3 { bottom: 20%; left: 15%; }
 
-}
-
 /* Header e Navegação */
 header {
     position: fixed;
