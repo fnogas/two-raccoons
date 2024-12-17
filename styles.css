@@ -75,27 +75,6 @@ body {
     }
 }
 
-/* Cursor Personalizado */
-.raccoon-cursor {
-    width: 20px;
-    height: 20px;
-    background: url('images/raccoon-cursor.png') no-repeat center/contain;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s;
-}
-
-/* Formas Geométricas */
-.creative-shapes .shape {
-    position: fixed;
-    opacity: 0.1;
-    pointer-events: none;
-}
-
-.shape-1 { top: 10%; left: 5%; }
-.shape-2 { top: 50%; right: 10%; }
-.shape-3 { bottom: 20%; left: 15%; }
 
 /* Header e Navegação */
 header {
@@ -195,7 +174,7 @@ nav {
 }
 
 .timeline-item {
-    padding: 1.9rem;
+    padding: 1.5rem;
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -263,7 +242,7 @@ nav {
 
 .card-front {
     background: white;
-    color: var(--secondary);
+    color: var(--dark);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
