@@ -50,7 +50,7 @@ body {
 
 .raccoon-loader img {
     width: 200px; /* Tamanho reduzido */
-    margin: 0 5px; /* Ajuste a margem para controlar o espaço entre as imagens */
+    margin: 0 1px; /* Ajuste a margem para controlar o espaço entre as imagens */
 }
 
 /* Animação para a imagem que se move para cima */
