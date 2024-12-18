@@ -44,7 +44,36 @@ body {
 
 .raccoon-loader img {
     width: 300px;
-    animation: bounce 1s infinite;
+}
+
+/* Animação para a imagem que se move para cima */
+.image-up {
+    animation: bounce-up 1s infinite;
+}
+
+/* Animação para a imagem que se move para baixo */
+.image-down {
+    animation: bounce-down 1s infinite;
+}
+
+/* Keyframes para a animação de movimento para cima */
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-30px); /* Move para cima */
+    }
+}
+
+/* Keyframes para a animação de movimento para baixo */
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(30px); /* Move para baixo */
+    }
 }
 
 /* Cursor Personalizado */
