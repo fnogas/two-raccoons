@@ -81,7 +81,6 @@ body {
     50% {
         transform: translateY(30px); /* Move para baixo */
     }
-}
 
 /* Cursor Personalizado */
 .raccoon-cursor {
