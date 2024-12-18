@@ -28,6 +28,7 @@ body {
 
 
 /* Loader */
+/* Loader */
 .loader {
     position: fixed;
     top: 0;
@@ -42,11 +43,45 @@ body {
     transition: opacity 0.5s;
 }
 
-.raccoon-loader img {
-    width: 300px;
-    animation: bounce 1s infinite;
+.raccoon-loader {
+    display: flex; /* Certifique-se de que as imagens estão em linha */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha verticalmente */
 }
 
+.raccoon-loader img {
+    width: 200px; /* Tamanho reduzido */
+    margin: 0 5px; /* Ajuste a margem para controlar o espaço entre as imagens */
+}
+
+/* Animação para a imagem que se move para cima */
+.image-up {
+    animation: bounce-up 1s infinite;
+}
+
+/* Animação para a imagem que se move para baixo */
+.image-down {
+    animation: bounce-down 1s infinite;
+}
+
+/* Keyframes para a animação de movimento para cima */
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-30px); /* Move para cima */
+    }
+}
+
+/* Keyframes para a animação de movimento para baixo */
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(30px); /* Move para baixo */
+    }
 /* Cursor Personalizado */
 .raccoon-cursor {
     width: 20px;
