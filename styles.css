@@ -605,3 +605,19 @@ footer {
 .visible {
     display: block;
 }
+/* Outros estilos do seu site */
+
+/* Estilos de troca de idioma */
+.language-switcher {
+    margin: 20px; /* Espaçamento ao redor do switcher */
+}
+
+.language-switcher a {
+    margin-right: 10px; /* Espaço entre os links */
+    text-decoration: none; /* Remove o sublinhado */
+    color: blue; /* Ajuste a cor conforme necessário */
+}
+
+.language-switcher a:hover {
+    color: darkblue; /* Cor ao passar o mouse */
+}
