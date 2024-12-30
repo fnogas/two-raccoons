@@ -610,6 +610,7 @@ footer {
 
 /* Estilos de troca de idioma */
 .language-switcher {
+    display: block; /* Ou flex, dependendo do layout desejado */
     margin: 20px; /* Espaçamento ao redor do switcher */
 }
 
