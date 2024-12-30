@@ -610,16 +610,23 @@ footer {
 
 /* Estilos de troca de idioma */
 .language-switcher {
-    display: block; /* Ou flex, dependendo do layout desejado */
+    display: flex; /* Usar flexbox para alinhar os botões */
+    justify-content: flex-end; /* Alinha os botões à direita */
     margin: 20px; /* Espaçamento ao redor do switcher */
 }
 
-.language-switcher a {
-    margin-right: 10px; /* Espaço entre os links */
-    text-decoration: none; /* Remove o sublinhado */
-    color: blue; /* Ajuste a cor conforme necessário */
+.lang-button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    margin-left: 10px; /* Espaço entre os botões */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
-.language-switcher a:hover {
-    color: darkblue; /* Cor ao passar o mouse */
+.lang-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }
