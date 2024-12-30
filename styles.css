@@ -49,7 +49,7 @@ body {
 }
 
 .raccoon-loader img {
-    width: 300px; /* Aumente o valor conforme necessário */
+    width: 250px; /* Aumente o valor conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
     margin: 0; /* Ajuste a margem para controlar o espaço entre as imagens */
 }
