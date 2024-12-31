@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* CSS para o botão de mudança de idioma */
         .language-switcher {
             display: flex; /* Usar flexbox para alinhar os botões */
             justify-content: flex-end; /* Alinha os botões à direita */
@@ -19,28 +20,29 @@
         }
 
         .lang-button {
-            background-color: #007BFF; /* Cor de fundo do botão */
-            color: white; /* Cor do texto */
-            border: none; /* Remove a borda padrão */
+            background-color: transparent; /* Fundo transparente */
+            color: #333; /* Cor do texto */
+            border: 2px solid #333; /* Borda do botão */
             border-radius: 5px; /* Bordas arredondadas */
             padding: 10px 15px; /* Espaçamento interno do botão */
             margin-left: 10px; /* Espaço entre os botões */
-            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            text-decoration: none; /* Remove o sublinhado */
             font-size: 16px; /* Tamanho da fonte */
-            transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+            transition: background-color 0.3s, color 0.3s; /* Transições suaves */
         }
 
         .lang-button:hover {
-            background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+            background-color: #333; /* Cor de fundo ao passar o mouse */
+            color: white; /* Cor do texto ao passar o mouse */
         }
     </style>
 </head>
 <body>
     <header>
         <div class="language-switcher">
-            <button class="lang-button" onclick="window.location.href='index.html'">Português</button>
-            <button class="lang-button" onclick="window.location.href='index-en.html'">English</button>
-            <button class="lang-button" onclick="window.location.href='index-es.html'">Español</button>
+            <a href="index.html" class="lang-button">Português</a>
+            <a href="index-en.html" class="lang-button">English</a>
+            <a href="index-es.html" class="lang-button">Español</a>
         </div>
     </header>
 
