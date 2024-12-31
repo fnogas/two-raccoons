@@ -11,17 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Links alternativos para SEO -->
-    <link rel="alternate" href="index.html" hreflang="en" />
-    <link rel="alternate" href="index-pt.html" hreflang="pt" />
-    <link rel="alternate" href="index-es.html" hreflang="es" />
+    <style>
+        .language-switcher {
+            display: flex; /* Usar flexbox para alinhar os botões */
+            justify-content: flex-end; /* Alinha os botões à direita */
+            margin: 20px; /* Espaçamento ao redor do switcher */
+        }
+
+        .lang-button {
+            background-color: #007BFF; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            padding: 10px 15px; /* Espaçamento interno do botão */
+            margin-left: 10px; /* Espaço entre os botões */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            font-size: 16px; /* Tamanho da fonte */
+            transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+        }
+
+        .lang-button:hover {
+            background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="language-switcher">
-            <a href="index.html">Português</a>
-            <a href="index-en.html">English</a>
-            <a href="index-es.html">Español</a>
+            <button class="lang-button" onclick="window.location.href='index.html'">Português</button>
+            <button class="lang-button" onclick="window.location.href='index-en.html'">English</button>
+            <button class="lang-button" onclick="window.location.href='index-es.html'">Español</button>
         </div>
     </header>
 
