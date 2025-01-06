@@ -182,7 +182,7 @@ nav {
 
 .hero p {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     animation: fadeInUp 1s ease 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
