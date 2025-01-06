@@ -156,6 +156,7 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    padding-top: 100px; /* Adiciona espaço no topo */
 }
 
 .hero-content {
