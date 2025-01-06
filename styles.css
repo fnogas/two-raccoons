@@ -149,8 +149,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center/cover; /* Adiciona a imagem de fundo */
-    background-size: contain; /* Faz a imagem caber no contêiner */
+    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center top; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Cobre todo o contêiner */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -158,6 +158,13 @@ nav {
     position: relative;
     overflow: hidden;
     padding-top: 150px; /* Adiciona espaço no topo */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
+        background-size: contain; /* Faz a imagem caber no contêiner */
+    }
 }
 
 .hero-content {
