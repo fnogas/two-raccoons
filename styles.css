@@ -150,6 +150,7 @@ nav {
 /* Hero Section */
 .hero {
     background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center/cover; /* Adiciona a imagem de fundo */
+    background-size: contain; /* Faz a imagem caber no contêiner */
     height: 100vh;
     display: flex;
     align-items: center;
