@@ -162,6 +162,9 @@ nav {
     text-align: center;
     color: white;
     z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+    padding: 20px; /* Espaçamento interno para dar espaço ao texto */
+    border-radius: 10px; /* Bordas arredondadas, se desejado */
 }
 
 .hero h1 {
