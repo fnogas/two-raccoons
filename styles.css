@@ -149,7 +149,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/blob/main/images/raccoons_hero.png') no-repeat center center/cover; /* Adiciona a imagem de fundo */
+    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center/cover; /* Adiciona a imagem de fundo */
     height: 100vh;
     display: flex;
     align-items: center;
