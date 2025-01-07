@@ -175,7 +175,7 @@ nav {
 
 .hero h1 {
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     animation: fadeInUp 1s ease;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
