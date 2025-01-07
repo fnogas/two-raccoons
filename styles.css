@@ -176,12 +176,13 @@ nav {
     font-size: 4rem;
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra no texto*/
+    
 }
 
 .hero p {
     font-size: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     animation: fadeInUp 1s ease 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
