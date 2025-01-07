@@ -177,7 +177,7 @@ nav {
     font-size: 4rem;
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra no texto*/
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9); /* Sombra no texto*/
     
 }
 
@@ -187,7 +187,7 @@ nav {
     animation: fadeInUp 1s ease 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9); /* Sombra do texto */
 }
 
 /* About Section */
