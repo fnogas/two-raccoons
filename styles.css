@@ -163,7 +163,6 @@ nav {
 @media (max-width: 768px) {
     .hero {
         background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
-        background-size: contain; /* Faz a imagem caber no contêiner */
     }
 }
 
@@ -175,7 +174,7 @@ nav {
 
 .hero h1 {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: fadeInUp 1s ease;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
