@@ -6,6 +6,7 @@
     --dark: #1E272E;       /* Texto escuro */
     --light: #F7F7F7;      /* Fundo claro */
     --gradient: linear-gradient(135deg, var(--secondary), var(--accent));
+    --gradientheader: linear-gradient(160deg, var(--secondary), var(--accent));
 }
 
 * {
@@ -112,7 +113,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background: var(--gradient);
+    background: var(--gradientheader);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
 }
