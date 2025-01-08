@@ -158,10 +158,10 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 250px; /* Adiciona espaço no topo */
+    padding-top: 270px; /* Adiciona espaço no topo */
 }
 
-@media (max-width: 200px) {
+@media (max-width: 1500px) {
     .hero {
         background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
     }
