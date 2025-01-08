@@ -158,7 +158,7 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 230px; /* Adiciona espaço no topo */
+    padding-top: 250px; /* Adiciona espaço no topo */
 }
 
 @media (max-width: 1000px) {
