@@ -158,7 +158,7 @@ nav {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 200px; /* Adiciona espaço no topo */
+    padding-top: 270px; /* Adiciona espaço no topo */
 }
 
 @media (max-width: 768px) {
@@ -190,6 +190,7 @@ nav {
     animation: fadeInUp 1s ease 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra no texto*/
 }
 
 /* About Section */
