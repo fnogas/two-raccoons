@@ -161,7 +161,7 @@ nav {
     padding-top: 230px; /* Adiciona espaço no topo */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .hero {
         background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
     }
