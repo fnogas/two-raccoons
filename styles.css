@@ -172,7 +172,7 @@ nav {
     color: white;
     z-index: 1;
     background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
-    padding: 20px; /* Espaçamento interno para dar espaço ao texto */
+    padding: 15px; /* Espaçamento interno para dar espaço ao texto */
     border-radius: 10px; /* Bordas arredondadas, se desejado */
 }
 
@@ -190,7 +190,6 @@ nav {
     animation: fadeInUp 1s ease 0.2s;
     opacity: 0;
     animation-fill-mode: forwards;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra do texto */
 }
 
 /* About Section */
