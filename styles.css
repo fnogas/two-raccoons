@@ -164,7 +164,7 @@ nav {
 @media (max-width: 768px) {
     .hero {
         background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
-        background-position: right 40%; /* Ajusta a posição da imagem no mobile */
+        background-position: right 60%; /* Ajusta a posição da imagem no mobile */
     }
 }
 
