@@ -90,7 +90,7 @@ body {
 .raccoon-cursor {
     width: 20px;
     height: 20px;
-    background: url('images/raccoon-cursor.png') no-repeat center/contain;
+    background: url('assets/raccoon-cursor.png') no-repeat center/contain;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
@@ -151,7 +151,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center top; /* Adiciona a imagem de fundo */
+    background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/assets/raccoons_hero.png') no-repeat center top; /* Adiciona a imagem de fundo */
     background-size: cover; /* Cobre todo o contêiner */
     height: 100vh;
     display: flex;
@@ -646,7 +646,7 @@ footer {
 
 @media (max-width: 768px) {
     .hero {
-        background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
+        background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/assets/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
         background-position: right 20% bottom 30%; /* Ajusta a posição da imagem no mobile */
     }
     .nav-links {
