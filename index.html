@@ -10,47 +10,16 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* CSS para o botão de mudança de idioma */
-        .language-switcher {
-            display: flex; /* Usar flexbox para alinhar os botões */
-            justify-content: flex-end; /* Alinha os botões à direita */
-            margin: 20px; /* Espaçamento ao redor do switcher */
-        }
-
-        .lang-button {
-            background-color: transparent; /* Fundo transparente */
-            color: #333; /* Cor do texto */
-            border: 2px solid #333; /* Borda do botão */
-            border-radius: 5px; /* Bordas arredondadas */
-            padding: 10px 15px; /* Espaçamento interno do botão */
-            margin-left: 10px; /* Espaço entre os botões */
-            text-decoration: none; /* Remove o sublinhado */
-            font-size: 16px; /* Tamanho da fonte */
-            transition: background-color 0.3s, color 0.3s; /* Transições suaves */
-        }
-
-        .lang-button:hover {
-            background-color: #333; /* Cor de fundo ao passar o mouse */
-            color: white; /* Cor do texto ao passar o mouse */
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="language-switcher">
-            <a href="index.html" class="lang-button">Português</a>
-            <a href="index-en.html" class="lang-button">English</a>
-            <a href="index-es.html" class="lang-button">Español</a>
-        </div>
-    </header>
+
 
     <!-- Loader -->
     <div class="loader">
         <div class="raccoon-loader">
-            <img src="images/oneraccoon_3D.svg" alt="Imagem 1" class="image-up">
-            <img src="images/oneraccoon2_3D.svg" alt="Imagem 2" class="image-down">
+            <img src="assets/oneraccoon_3D.svg" alt="Imagem 1" class="image-up">
+            <img src="assets/oneraccoon2_3D.svg" alt="Imagem 2" class="image-down">
         </div>
     </div>
 
@@ -68,14 +37,30 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="Two Raccoons Logo">
+                <img src="assets/logo.png" alt="Two Raccoons Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#demos">Voice Demos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a data-translate="header.about" href="#about">About Us</a></li>
+                <li><a data-translate="header.services" href="#services">Services</a></li>
+                <li><a data-translate="header.voice-demos" href="#demos">Voice Demos</a></li>
+                <li><a data-translate="header.contact" href="#contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher-container">
+                <button id="switcher-lang" class="lang-switcher-btn">
+                    <img src="assets/united-kingdom.png" alt="English flag" class="flag-icon">
+                    <span data-translate="header.language.en">EN</span>
+                </button>
+                <div class="lang-options">
+                    <div class="lang-option" data-value="en">
+                        <img src="assets/united-kingdom.png" alt="English flag" class="flag-icon">
+                        <span data-translate="header.language.en">EN</span>
+                    </div>
+                    <div class="lang-option" data-value="pt">
+                        <img src="assets/brazil.png" alt="Brazilian flag" class="flag-icon">
+                        <span data-translate="header.language.pt">PT-BR</span>
+                    </div>
+                </div>
+            </div>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -87,9 +72,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Two Raccoons</h1>
-            <p>Innovation in copywriting, audio and video</p>
-            <a href="#contact" class="cta-button">Start a Project</a>
+            <h1 data-translate="hero.title">Two Raccoons</h1>
+            <p data-translate="hero.subtitle">Innovation in copywriting, audio and video</p>
+            <a href="#contact" class="cta-button-hero" data-translate="hero.cta">Start a Project</a>
         </div>
         <div class="hero-shapes">
             <div class="hero-shape"></div>
@@ -100,49 +85,38 @@
 
     <!-- About Us -->
     <section id="about" class="about">
-        <h2>About Us</h2>
+        <h2 data-translate="title.about">About Us</h2>
         <div class="about-content">
             <div class="about-text">
-                <h3>Creative Agency with an Unusual Perspective</h3>
-                <p>We´re Two Raccoons—where unstoppable creative ideas match with boundless results.</p>
-                <br>
-                    Like our cute namesake, we're curious, adaptable, agile and always looking for innovative solutions, 
-                in line with our mission as a creative agency: to explore, adapt and connect.</p>
-                <br>
-                    Raccoons are natural explorers, investigating and interacting with their surroundings. 
-                This reflects our endless curiosity and approach to seeking out new ideas, always exploring different 
-                angles, to bring about solutions in inventive ways, whether in voice over, translation/localization, 
-                design, copywriting, audio or video.</p>
-                <br>
-                    Plus, of course, there are Two of us: the creative duality of founders who unite different perspectives
-                and skills to create through authenticity, synergy, adventurous spirit and connection, 
-                        delivering results for those looking for unconventional solutions and high-end work .</p>
-                <br>
-                    Let´s create togheter?</p>
-                 <br>
-                 <br>
-                  <img src="images/tworaccoons_reduzido4_3D.png" alt="Two Raccoons">
+                <h3 data-translate="about.content.title">Creative Agency with an Unusual Perspective</h3>
+                <p data-translate="about.content.text">We´re Two Raccoons—where unstoppable creative ideas match with boundless results.</p>
+                <p data-translate="about.content.text2">Like our cute namesake, we're curious, adaptable, agile and always looking for innovative solutions, in line with our mission as a creative agency: to explore, adapt and connect.</p>
+                <p data-translate="about.content.text3">Raccoons are natural explorers, investigating and interacting with their surroundings. This reflects our endless curiosity and approach to seeking out new ideas, always exploring different angles, to bring about solutions in inventive ways, whether in voice over, translation/localization, design, copywriting, audio or video.</p>
+                <p data-translate="about.content.text4">Plus, of course, there are Two of us: the creative duality of founders who unite different perspectives
+                and skills to create through authenticity, synergy, adventurous spirit and connection, delivering results for those looking for unconventional solutions and high-end work .</p>
+                <p data-translate="about.content.text5">Let´s create together?</p>
+                  <img src="assets/tworaccoons_reduzido4_3D.png" alt="Two Raccoons">
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>2005</h3>
-                    <p>Launch of QFilmes: the 1st raccoon🦝 gave the spark that started it all!</p>
+                    <p data-translate="timeline.2005">Launch of QFilmes: the 1st raccoon🦝 gave the spark that started it all!</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2013</h3>
-                    <p>The 2nd raccoon🦝 came into play: introducing Commtexto!</p>
+                    <p data-translate="timeline.2013">The 2nd raccoon🦝 came into play: introducing Commtexto!</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2021</h3>
-                    <p>Start rocking not just in Brazil, but in Portugal too - 🇧🇷⚡🇵🇹</p>
+                    <p data-translate="timeline.2021">Start rocking not just in Brazil, but in Portugal too - 🇧🇷⚡🇵🇹</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2024</h3>
-                    <p>Time to map out the next big leap—growth awaits!🚀</p>
+                    <p data-translate="timeline.2024">Time to map out the next big leap—growth awaits!🚀</p>
                 </div>
                 <div class="timeline-item">
                     <h3>2025</h3>
-                    <p>The birth of Two Raccoons Studio!🦝🦝</p>
+                    <p data-translate="timeline.2025">The birth of Two Raccoons Studio!🦝🦝</p>
                 </div>
             </div>
         </div>
@@ -150,90 +124,81 @@
 
     <!-- Services -->
     <section id="services" class="services">
-        <h2>Our Services</h2>
+        <h2 data-translate="services.title">Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
                 <div class="card-front">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Voice Over</h3>
-                 <p></p>
-                    <p>Professional voice talent in Brazilian Portuguese (PT-BR) or English for your projects</p>
+                    <i class="fas fa-2x fa-microphone"></i>
+                    <h3 data-translate="services.voice-over">Voice Over</h3>
+                    <p data-translate="services.voice-over.description">Professional voice talent in Brazilian Portuguese (PT-BR) or English for your projects</p>
                 </div>
                 <div class="card-back">
                     <ul>
-                    <li>Commercial</li>
-                    <li>Institutional</li>
-                    <li>Cartoon</li>
-                    <li>Telephone/IVR</li>
-                    <li>Podcast</li>
+                    <li data-translate="services.voice-over.commercial">Commercial</li>
+                    <li data-translate="services.voice-over.institutional">Institutional</li>
+                    <li data-translate="services.voice-over.cartoon">Cartoon</li>
+                    <li data-translate="services.voice-over.telephone">Telephone/IVR</li>
+                    <li data-translate="services.voice-over.podcast">Podcast</li>
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="card-front">
-                    <i class="fas fa-language"></i>
-                <h3>Translation/Localization</h3>
-                 <p></p>
-                <p>Accurate translations and cultural adaptations from English to Portuguese (PT-BR)</p>
+                    <i class="fas fa-2x fa-language"></i>
+                <h3 data-translate="services.translation">Translation/Localization</h3>
+                <p data-translate="services.translation.description">Accurate translations and cultural adaptations from English to Portuguese (PT-BR)</p>
                 </div>
                 <div class="card-back">
                     <ul>
-                    <li>Marketing Content</li>
-                    <li>Articles</li>
-                    <li>Web Content</li>
-                    <li>Cartoons / movies</li>
-                    <li>Proofreading</li>
+                    <li data-translate="services.translation.marketing">Marketing Content</li>
+                    <li data-translate="services.translation.articles">Articles</li>
+                    <li data-translate="services.translation.web">Web Content</li>
+                    <li data-translate="services.translation.cartoons">Cartoons / movies</li>
+                    <li data-translate="services.translation.proofreading">Proofreading</li>
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="card-front">
-                    <i class="fas fa-video"></i>
-                    <h3>Video Production</h3>
-                 <p></p>
-                    <p>Authentic video content that connects with your audience</p>
+                    <i class="fas fa-2x fa-video"></i>
+                    <h3 data-translate="services.video">Video Production</h3>
+                    <p data-translate="services.video.description">Authentic video content that connects with your audience</p>
                 </div>
                 <div class="card-back">
                 <ul>
-                    <li>Social Media Videos</li>
-                    <li>Video Editing</li> 
-                    <li>Subtitling</li>
-                    <li>VFX (Visual Effects)</li>
-                    <li>Motion Graphics / Animations</li>
+                    <li data-translate="services.video.social">Social Media Videos</li>
+                    <li data-translate="services.video.editing">Video Editing</li> 
+                    <li data-translate="services.video.subtitling">Subtitling</li>
+                    <li data-translate="services.video.vfx">VFX (Visual Effects)</li>
+                    <li data-translate="services.video.motion">Motion Graphics / Animations</li>
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="card-front">
-                     <i class="fas fa-pencil-alt"></i>
-                <h3>Copywriting</h3>   
-                 <p></p>    
-                <p>Engaging copy to rock on your marketing and sales purposes</p>
+                     <i class="fas fa-2x fa-pencil-alt"></i>
+                <h3 data-translate="services.copywriting">Copywriting</h3>       
+                <p data-translate="services.copywriting.description">Engaging copy to rock on your marketing and sales purposes</p>
                 </div>
                 <div class="card-back">
                 <ul>
-                    <li>Articles / e-Books</li>
-                    <li>Social Media</li>
-                    <li>Video Scripts</li>
-                    <li>Blog Content</li>
-                    <li>Website / Landing Pages</li>
+                    <li data-translate="services.copywriting.articles">Articles / e-Books</li>
+                    <li data-translate="services.copywriting.social">Social Media</li>
+                    <li data-translate="services.copywriting.video">Video Scripts</li>
+                    <li data-translate="services.copywriting.blog">Blog Content</li>
+                    <li data-translate="services.copywriting.website">Website / Landing Pages</li>
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="card-front">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Creative Design</h3>
-                    <p></p>
-                    <p>Unique and impactful visual solutions for your brand</p>
+                    <i class="fas fa-2x fa-paint-brush"></i>
+                    <h3 data-translate="services.design">Creative Design</h3>
+                    <p data-translate="services.design.description">Unique and impactful visual solutions for your brand</p>
                 </div>
                 <div class="card-back">
                     <ul>
@@ -243,27 +208,24 @@
                     <li>Graphic Design</li>
                     <li>Conceptual Design</li>
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="card-front">
-                    <i class="fas fa-music"></i>
-                    <h3>Audio Production</h3>
-                 <p></p>
-                    <p>Custom audio production and sound design services</p>
+                    <i class="fas fa-2x fa-music"></i>
+                    <h3 data-translate="services.audio">Audio Production</h3>
+                    <p data-translate="services.audio.description">Custom audio production and sound design services</p>
                 </div>
                 <div class="card-back">
                 <ul>
-                    <li>SFX (Sound Effects)</li>
-                    <li>Stingers / Jingles</li>
-                    <li>Podcasts</li>
-                    <li>Spots / Audio Ads</li>
-                    <li>Voice Over Recording</li>    
+                    <li data-translate="services.audio.sfx">SFX (Sound Effects)</li>
+                    <li data-translate="services.audio.stingers">Stingers / Jingles</li>
+                    <li data-translate="services.audio.podcasts">Podcasts</li>
+                    <li data-translate="services.audio.spots">Spots / Audio Ads</li>
+                    <li data-translate="services.audio.recording">Voice Over Recording</li>    
                 </ul>
-                 <p></p>
-                    <a href="#contact" class="service-link">Let´s talk?</a>
+                    <a href="#contact" class="service-link" data-translate="services.contact">Let's Talk</a>
                </div>
             </div>
         </div>
@@ -271,10 +233,10 @@
 
     <!-- Voice Demos -->
     <section id="demos" class="demos">
-        <h2>Voice Demos</h2>
+        <h2 data-translate="demos.title">Voice Demos</h2>
         <div class="demo-grid">
             <div class="demo-card">
-                <h3>Commercial</h3>
+                <h3 data-translate="demos.commercial">Commercial</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -289,7 +251,7 @@
                 </div>
             </div>
             <div class="demo-card">
-                <h3>Institutional</h3>
+                <h3 data-translate="demos.institutional">Institutional</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -304,7 +266,7 @@
                 </div>
             </div>
     <div class="demo-card">
-                <h3>Telephone/IVR</h3>
+                <h3 data-translate="demos.telephone">Telephone/IVR</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -319,7 +281,7 @@
                 </div>
             </div>
     <div class="demo-card">
-                <h3>Cartoon</h3>
+                <h3 data-translate="demos.cartoon">Cartoon</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -334,7 +296,7 @@
                 </div>
             </div>
 <div class="demo-card">
-                <h3>Podcast</h3>
+                <h3 data-translate="demos.podcast">Podcast</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -349,7 +311,7 @@
                 </div>
             </div>
 <div class="demo-card">
-                <h3>Narrative</h3>
+                <h3 data-translate="demos.audio">Narrative</h3>
                 <div class="custom-player">
                     <div class="player-controls">
                         <button class="play-btn">
@@ -368,39 +330,39 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <h2>Let's Create Together!</h2>
+        <h2 data-translate="contact.title">Let's Create Together!</h2>
         <div class="contact-container">
             <form class="contact-form">
           <form action="https://api.sheetmonkey.io/form/mWB3egcyGXvRCMDNCMRdxo" method="post"> 
                 <div class="input-group">
                     <input type="text" required>
-                    <label>Name*</label>
+                    <label data-translate="contact.name">Name*</label>
                     <span class="highlight"></span>
                 </div>
                 <div class="input-group">
                     <input type="email" required>
-                    <label>Email*</label>
+                    <label data-translate="contact.email">Email*</label>
                     <span class="highlight"></span>
                 </div>
                 <div class="input-group">
                     <select required>
-                        <option value="" disabled selected>Select Service</option>
-                        <option value="voice">Voice Over</option>
-                        <option value="translation">Translation/Localization</option>
-                        <option value="video">Video Production</option>
-                        <option value="copy">Copywriting</option>
-                        <option value="design">Creative Design</option>
-                        <option value="audio">Audio Production</option>
+                        <option value="" disabled selected data-translate="contact.service">Select Service</option>
+                        <option value="voice" data-translate="contact.service.voice">Voice Over</option>
+                        <option value="translation" data-translate="contact.service.translation">Translation/Localization</option>
+                        <option value="video" data-translate="contact.service.video">Video Production</option>
+                        <option value="copy" data-translate="contact.service.copywriting">Copywriting</option>
+                        <option value="design" data-translate="contact.service.design">Creative Design</option>
+                        <option value="audio" data-translate="contact.service.audio">Audio Production</option>
                     </select>
                     <span class="highlight"></span>
                 </div>
                 <div class="input-group">
                     <textarea required></textarea>
-                    <label>Tell us about your project*</label>
+                    <label data-translate="contact.message">Tell us about your project*</label>
                     <span class="highlight"></span>
                 </div>
                 <button type="submit" class="submit-btn">
-                    <span>Send Message</span>
+                    <span data-translate="contact.send">Send Message</span>
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
@@ -411,7 +373,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/tworaccoons_reduzido2_3D.png" alt="Two Raccoons">
+                <img src="assets/tworaccoons_reduzido2_3D.png" alt="Two Raccoons">
             </div>
             <div class="social-links">
                 <a href="https://www.instagram.com/commtexto/" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -428,15 +390,15 @@
                 </a>
             </div>
             <div class="footer-newsletter">
-                <h4>Subscribe to our newsletter</h4>
+                <h4 data-translate="footer.newsletter">Subscribe to our newsletter</h4>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email">
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                 </form>
             </div>
         </div>
-        <p class="copyright">&copy; 2025 Two Raccoons Studio - Creative Agency. All rights reserved.</p>
-        <p><a href="privatepolicy.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></p>
+        <p data-translate="footer.copyright" class="copyright">&copy; 2025 Two Raccoons Studio - Creative Agency. All rights reserved.</p>
+        <p class="privacy-link"><a  data-translate="footer.privacy" href="privatepolicy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
 </div>
     </footer>
 
@@ -446,6 +408,6 @@
     </script>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

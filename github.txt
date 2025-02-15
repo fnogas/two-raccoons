@@ -1,0 +1,5 @@
+git tag -a 1.0.0 -m "Version 1.0.0 - Initial Release
+
+- Introduced the main application features including user authentication and profile management.
+- Fixed bugs related to form validation and improved UI responsiveness.
+- No breaking changes in this release."

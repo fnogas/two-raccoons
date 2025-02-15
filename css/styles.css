@@ -17,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 60px;
 }
 
 body {
@@ -161,12 +162,24 @@ nav {
     padding-top: 295px; /* Adiciona espaço no topo */
 }
 
-@media (max-width: 768px) {
-    .hero {
-        background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
-        background-position: right 20% bottom 30%; /* Ajusta a posição da imagem no mobile */
-    }
+.cta-button-hero {
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s;
 }
+
+.cta-button-hero:hover {
+    background-color: var(--secondary);
+    color: white;
+    transition: background-color 0.5s;
+
+}
+
 
 .hero-content {
     text-align: center;
@@ -212,6 +225,11 @@ nav {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: var(-- secondary);
+}
+
+.about-text p {
+    margin-top: 1rem;
+    text-align: justify;
 }
 
 .timeline {
@@ -284,13 +302,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: .5rem;
+
 }
 
 .card-front {
     background: white;
     color: var(--dark); /* Cor padrão para o texto */
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .card-front h3 {
@@ -301,6 +321,27 @@ nav {
     background: var(--gradient);
     color: white;
     transform: rotateY(180deg);
+    
+}
+
+.service-link{
+    text-decoration: none;
+    background-color: var(--gradient);
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--dark);
+    transition: background-color 0.5s;
+    margin-top: 1rem;
+}
+
+.service-link:hover{
+    background-color: var(--secondary);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: background-color 0.5s;
 }
 
 .service-card:hover .card-front {
@@ -574,6 +615,18 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+.privacy-link {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.privacy-link a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Animações */
 @keyframes fadeInUp {
     from {
@@ -591,8 +644,11 @@ footer {
     50% { transform: translateY(-10px); }
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
+    .hero {
+        background: url('https://raw.githubusercontent.com/fnogas/two-raccoons/main/images/raccoons_hero.png') no-repeat center center; /* Adiciona a imagem de fundo */
+        background-position: right 20% bottom 30%; /* Ajusta a posição da imagem no mobile */
+    }
     .nav-links {
         display: none;
     }
@@ -612,6 +668,27 @@ footer {
     .contact-form {
         padding: 2rem;
     }
+
+    .about{
+        padding: 4rem 2rem;
+    }
+    
+    .lang-switcher-container {
+        margin-left: 10px;
+    }
+
+    .lang-switcher-btn {
+        font-size: 13px;
+    }
+    
+    .lang-switcher-btn:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .lang-options {
+        font-size: 12px;
+    }
+    
 }
 
 /* Utility Classes */
@@ -624,26 +701,62 @@ footer {
 }
 /* Outros estilos do seu site */
 
-/* Estilos de troca de idioma */
-.language-switcher {
-    display: flex; /* Usar flexbox para alinhar os botões */
-    justify-content: flex-end; /* Alinha os botões à direita */
-    margin: 20px; /* Espaçamento ao redor do switcher */
+.lang-switcher-container {
+    position: relative;
 }
 
-.lang-button {
-    background-color: transparent; /* Fundo transparente */
-    color: #333; /* Cor do texto */
-    border: 2px solid #333; /* Borda do botão */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Espaçamento interno do botão */
-    margin-left: 10px; /* Espaço entre os botões */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+.lang-switcher-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--dark);
+    width: 100px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.lang-button:hover {
-    background-color: #333; /* Cor de fundo ao passar o mouse */
-    color: white; /* Cor do texto ao passar o mouse */
+.lang-switcher-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.lang-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.lang-options.show {
+    display: block;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.lang-option:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
