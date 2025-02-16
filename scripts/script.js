@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const logoHeader = document.getElementById('lopo-header');
 logoHeader.addEventListener('click', () => {
-    window.location.href = 'index.html';
+    window.location.reload();
 });
 
 logoHeader.addEventListener('mouseover', () => {
