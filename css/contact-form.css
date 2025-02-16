@@ -1,0 +1,90 @@
+.contact {
+   padding: 6rem 2rem;
+   background: var(--gradient);
+   color: white;
+}
+
+.contact-container {
+   max-width: 800px;
+   margin: 3rem auto 0;
+}
+
+.contact-form {
+   background: white;
+   padding: 3rem;
+   border-radius: 15px;
+   box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.input-group {
+   position: relative;
+   margin-bottom: 2rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+   width: 100%;
+   padding: 1rem;
+   border: 2px solid #eee;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: all 0.3s;
+   
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+   border-color: #8B3FCA;
+   outline: none;
+}
+
+
+.input-group label {
+   position: absolute;
+   left: 1rem;
+   top: 1rem;
+   color: #999;
+   transition: all 0.3s;
+   pointer-events: none;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+   top: -0.5rem;
+   left: 0.5rem;
+   font-size: 0.8rem;
+   background: white;
+   padding: 0 0.5rem;
+   color: var(--secondary);
+}
+
+.select-service {
+   color: var(--secondary);
+}
+
+.submit-btn {
+   background: var(--gradient);
+   color: white;
+   border: none;
+   padding: 1rem 2rem;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: transform 0.3s;
+   width: 100%;
+}
+
+.submit-btn:hover {
+   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+   .contact-form {
+       padding: 2rem;
+   }
+   
+}

@@ -1,0 +1,148 @@
+
+
+/* Voice Demos Section */
+.demos {
+   padding: 6rem 2rem;
+   background: var(--light);
+}
+
+.demo-grid {
+   display: grid; /* Ativa o grid */
+   grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+   gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Para telas médias - 2 colunas */
+@media (max-width: 1199px) and (min-width: 768px) {
+   .demo-grid {
+       grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+   }
+}
+
+/* Para mobile - 1 coluna */
+@media (max-width: 767px) {
+   .demo-grid {
+       grid-template-columns: 1fr; /* 1 coluna */
+   }
+}
+
+/* Melhorar espaçamento */
+.demo-card {
+   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+   padding: 2rem;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   transition: transform 0.3s, box-shadow 0.3s;
+   position: relative;
+   overflow: hidden;
+}
+
+.demo-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.demo-card h3 {
+   color: var(--primary);
+   margin-bottom: 0.5rem;
+   font-size: 1.1rem;
+   position: relative;
+   z-index: 1;
+}
+
+.demo-card p {
+   color: #666;
+   margin-bottom: 1.5rem;
+   font-size: 0.5rem;
+   position: relative;
+   z-index: 1;
+}
+
+.demo-tags {
+   margin-top: 1rem;
+   display: flex;
+   gap: 0.5rem;
+   position: relative;
+   z-index: 1;
+}
+
+.demo-tags span {
+   background: var(--light);
+   padding: 0.3rem 0.8rem;
+   border-radius: 20px;
+   font-size: 0.8rem;
+   color: var(--primary);
+}
+
+.demo-card::before {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: rgba(255, 255, 255, 0.1);
+   transform: rotate(45deg);
+   transition: opacity 0.3s;
+   opacity: 0;
+   z-index: 0;
+}
+
+.demo-card:hover::before {
+   opacity: 1;
+}
+
+.play-btn {
+   background: var(--secondary);
+   color: white;
+   border: none;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background 0.3s;
+   position: relative;
+   z-index: 1;
+}
+
+.play-btn:hover {
+   background: var(--accent);
+}
+
+.custom-player {
+   margin-top: 1.5rem;
+}
+
+.player-controls {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.play-btn {
+   background: var(--secondary);
+   color: white;
+   border: none;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: transform 0.3s;
+}
+
+.progress-bar {
+   flex: 1;
+   height: 4px;
+   background: #eee;
+   border-radius: 2px;
+   overflow: hidden;
+}
+
+.progress {
+   height: 100%;
+   background: var(--secondary);
+   width: 0;
+}

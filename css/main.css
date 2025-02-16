@@ -1,0 +1,260 @@
+@import url('hero.css');
+@import url('about.css');
+@import url('timeline.css');
+@import url('services.css');
+@import url('voices-demo.css');
+@import url('popup-form.css');
+@import url('contact-form.css');
+@import url('language-handler.css');
+
+/* Variáveis e Reset */
+:root {
+    --primary: #2C3A47;    /* Cinza escuro */
+    --secondary: #8B3FCA;  /* Roxo */
+    --accent: #FFDC3C;     /* Amarelo */
+    --dark: #1E272E;       /* Texto escuro */
+    --light: #F7F7F7;      /* Fundo claro */
+    --gradient: linear-gradient(135deg, var(--secondary), var(--accent));
+    --gradientheader: linear-gradient(175deg, var(--secondary), var(--accent));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: var(--light);
+    overflow-x: hidden;
+}
+
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+.raccoon-loader {
+    display: flex; /* Certifique-se de que as imagens estão em linha */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.raccoon-loader img {
+    width: 250px; /* Aumente o valor conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0; /* Ajuste a margem para controlar o espaço entre as imagens */
+}
+
+/* Animação para a imagem que se move para cima */
+.image-up {
+    animation: bounce-up 1s infinite;
+}
+
+/* Animação para a imagem que se move para baixo */
+.image-down {
+    animation: bounce-down 1s infinite;
+}
+
+/* Keyframes para a animação de movimento para cima */
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-30px); /* Move para cima */
+    }
+}
+
+/* Keyframes para a animação de movimento para baixo */
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(30px); /* Move para baixo */
+    }
+}
+
+/* Cursor Personalizado */
+.raccoon-cursor {
+    width: 20px;
+    height: 20px;
+    background: url('assets/raccoon-cursor.png') no-repeat center/contain;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s;
+}
+
+/* Formas Geométricas */
+.creative-shapes .shape {
+    position: fixed;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.shape-1 { top: 10%; left: 5%; }
+.shape-2 { top: 50%; right: 10%; }
+.shape-3 { bottom: 20%; left: 15%; }
+
+/* Header e Navegação */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--gradientheader);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: var(--secondary);
+}
+
+.footer-newsletter input {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    color: white;
+    margin-right: 0.5rem;
+}
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.privacy-link {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.privacy-link a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .contact-form {
+        padding: 2rem;
+    }
+    
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
