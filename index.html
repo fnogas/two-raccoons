@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
     <!-- Header e Navegação -->
     <header>
         <nav>
-            <div class="logo">
+            <div class="logo" id="lopo-header">
                 <img src="assets/logo.png" alt="Two Raccoons Logo">
             </div>
             <ul class="nav-links">
@@ -332,20 +332,17 @@
     <section id="contact" class="contact">
         <h2 data-translate="contact.title">Let's Create Together!</h2>
         <div class="contact-container">
-            <form class="contact-form">
-          <form action="https://api.sheetmonkey.io/form/mWB3egcyGXvRCMDNCMRdxo" method="post"> 
+          <form action="https://api.sheetmonkey.io/form/29NtCmWGuRzp1xzewQ7Goy" class="contact-form"  method="post" > 
                 <div class="input-group">
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                     <label data-translate="contact.name">Name*</label>
-                    <span class="highlight"></span>
                 </div>
                 <div class="input-group">
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label data-translate="contact.email">Email*</label>
-                    <span class="highlight"></span>
                 </div>
                 <div class="input-group">
-                    <select required>
+                    <select class="" type="text" name="service" required>
                         <option value="" disabled selected data-translate="contact.service">Select Service</option>
                         <option value="voice" data-translate="contact.service.voice">Voice Over</option>
                         <option value="translation" data-translate="contact.service.translation">Translation/Localization</option>
@@ -354,14 +351,12 @@
                         <option value="design" data-translate="contact.service.design">Creative Design</option>
                         <option value="audio" data-translate="contact.service.audio">Audio Production</option>
                     </select>
-                    <span class="highlight"></span>
                 </div>
                 <div class="input-group">
-                    <textarea required></textarea>
+                    <textarea name="message"  required></textarea>
                     <label data-translate="contact.message">Tell us about your project*</label>
-                    <span class="highlight"></span>
                 </div>
-                <button type="submit" class="submit-btn">
+                <button type="submit" value="submit" class="submit-btn">
                     <span data-translate="contact.send">Send Message</span>
                     <i class="fas fa-paper-plane"></i>
                 </button>
@@ -409,5 +404,8 @@
 
     <!-- Scripts -->
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/form-handler.js"></script>
+    <script src="./scripts/language-handler.js"></script>
+    <script src="./scripts/audio-player.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+
+/* About Section */
+.about {
+   padding: 6rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.about-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+   margin-top: 3rem;
+}
+
+.about-text h3 {
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+   color: var(-- secondary);
+}
+
+.about-text p {
+   margin-top: 1rem;
+   text-align: justify;
+}
+
+@media (max-width: 768px) {
+   
+   .about-content {
+       grid-template-columns: 1fr;
+   }
+
+   .about{
+       padding: 4rem 2rem;
+   }
+
+   .about-text h3 {
+      font-size: 1.55rem;
+   }
+   
+   
+}
