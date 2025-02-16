@@ -6,6 +6,7 @@
 @import url('popup-form.css');
 @import url('contact-form.css');
 @import url('language-handler.css');
+@import url('newsletter.css');
 
 /* Variáveis e Reset */
 :root {
@@ -215,6 +216,12 @@ footer {
 .privacy-link a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.privacy-link a:hover {
+    color: var(--secondary);
+    text-decoration: none;
 }
 
 /* Animações */
@@ -242,11 +249,7 @@ footer {
     .burger {
         display: block;
     }
-    
-    .contact-form {
-        padding: 2rem;
-    }
-    
+
 }
 
 /* Utility Classes */
