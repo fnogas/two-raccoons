@@ -98,7 +98,7 @@
         "contact.message": "Tell us about your project*",
         "contact.send": "Send Message",
 
-        "footer.newsletter": "Subscribe to our newsletter",
+        "footer.newsletter": "Sign up to our newsletter",
         "footer.copyright": "© 2025 Two Raccoons Studio. All rights reserved.",
         "footer.privacy": "Privacy Policy"
         
@@ -120,12 +120,12 @@
         "about.content.title": "Agência & Studio de Criação com uma Perspectiva Incomum",
         "about.content.text": "Somos a Two Raccoons, onde criatividade surpreendente se combina com resultados sem limites.",
         "about.content.text2": "Assim como nosso simpático xará, somos curiosos, adaptáveis, ágeis e sempre buscamos ideias inovadoras alinhadas à nossa missão enquanto agência: explorar, adaptar e conectar.",
-        "about.content.text3": "Os raccoons (ou guaxinins, em bom português!) são exploradores naturais, que investigam e interagem com o meio à sua volta. Isso reflete nossa curiosidade incansável para explorar diferentes ângulos, seja em narração, tradução/localização, design, copywriting/redação, áudio ou vídeo.",
+        "about.content.text3": "Os raccoons (ou guaxinins, em bom português!) são exploradores naturais, que investigam e interagem com o meio à sua volta. Isso reflete nossa curiosidade incansável para explorar diferentes ângulos, seja em locução, narração, tradução/localização, design, copywriting/redação, áudio ou vídeo.",
         "about.content.text4": "Além disso, nós somos DOIS: a dualidade criativa dos fundadores da agência, que uniram diferentes perspectivas e habilidades para criar resultados autênticos, cheios de sinergia, espírito de aventura e conexão. Tudo para que você tenha resultados além do óbvio.",
         "about.content.text5": "Bora criar juntos?",
 
-        "timeline.2005": "Lançamento do QFilmes: o 1º raccoon🦝 acende a faísca pra iniciar ajornada!",
-        "timeline.2013": "A 2ª raccoon🦝 entrou em cena: apresentando a Commtexto!",
+        "timeline.2005": "Lançamento do QFilmes: o 1º raccoon🦝 acende a faísca para iniciar a jornada!",
+        "timeline.2013": "A 2ª raccoon🦝 entrou em cena: apresentando a Commtexto Comunicação!",
         "timeline.2021": "Cruzando um oceano para fazer sucesso não apenas no Brasil, mas também em Portugal - 🇧🇷⚡🇵🇹",
         "timeline.2024": "Hora de mapear o próximo grande salto — o crescimento nos espera!🚀",
         "timeline.2025": "Nasce a Two Raccoons Studio!🦝🦝",
@@ -203,7 +203,7 @@
         "contact.message": "Conte mais sobre seu projeto!*",
         "contact.send": "Enviar",
 
-        "footer.newsletter": "Inscreva-se na nossa newsletter",
+        "footer.newsletter": "Inscreva-se na nossa Newsletter",
         "footer.copyright": "© 2025 Two Raccoons Studio. Todos os direitos reservados.",
         "footer.privacy": "Política de Privacidade"
     }
