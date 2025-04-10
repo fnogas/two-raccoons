@@ -98,7 +98,7 @@
         "contact.message": "Tell us about your project*",
         "contact.send": "Send Message",
 
-        "footer.newsletter": "Sign up to our newsletter",
+        "footer.newsletter": "Sign up to our Newsletter",
         "footer.copyright": "© 2025 Two Raccoons Studio. All rights reserved.",
         "footer.privacy": "Privacy Policy"
         
@@ -118,13 +118,13 @@
         "header.language.pt": "PT",
         
         "about.content.title": "Agência & Studio de Criação com uma Perspectiva Incomum",
-        "about.content.text": "Somos a Two Raccoons, onde escolhas criativas surpreendentes se combinma com resultados de impacto.",
+        "about.content.text": "Somos a Two Raccoons, onde escolhas criativas surpreendentes se combinam com resultados de impacto.",
         "about.content.text2": "Assim como nosso simpático xará, somos curiosos, adaptáveis, ágeis e sempre buscamos ideias inovadoras alinhadas à nossa missão enquanto agência: explorar, adaptar e conectar.",
-        "about.content.text3": "Os raccoons (ou guaxinins, em bom português!) são exploradores naturais, que investigam e interagem com o meio à sua volta. Isso reflete nossa curiosidade incansável para explorar diferentes ângulos, seja em locução, narração, tradução/localização, design, copywriting/redação, áudio ou vídeo.",
-        "about.content.text4": "Além disso, nós somos DOIS: a dualidade criativa dos fundadores da agência, que uniram diferentes perspectivas e habilidades para criar resultados autênticos, cheios de sinergia, espírito de aventura e conexão. Tudo para que você tenha resultados além do óbvio.",
+        "about.content.text3": "Os raccoons (ou guaxinins, em bom português!) são exploradores naturais, que investigam e interagem com o meio à sua volta. Isso reflete nossa curiosidade incansável para explorar diferentes ângulos, seja em serviços de locução, narração, tradução/localização, design, copywriting/redação ou produção de áudio e vídeo.",
+        "about.content.text4": "Além disso, nós somos DOIS: a dualidade criativa dos fundadores da agência, que uniram diferentes perspectivas e habilidades para criar soluções autênticas, cheias de sinergia, espírito de aventura e conexão. Tudo para que você tenha resultados além do óbvio.",
         "about.content.text5": "Bora criar juntos?",
 
-        "timeline.2005": "Lançamento do QFilmes: o 1º raccoon🦝 acende a faísca para iniciar a jornada!",
+        "timeline.2005": "Lançamento da QFilmes: o 1º raccoon🦝 acendeu a faísca para iniciar a jornada!",
         "timeline.2013": "A 2ª raccoon🦝 entrou em cena: apresentando a Commtexto Comunicação!",
         "timeline.2021": "Cruzando um oceano para fazer sucesso não apenas no Brasil, mas também em Portugal - 🇧🇷⚡🇵🇹",
         "timeline.2024": "Hora de mapear o próximo grande salto — o crescimento nos espera!🚀",
@@ -132,7 +132,7 @@
 
         "services.title": "Nossos Serviços",
         "services.voice-over": "Voz",
-        "services.voice-over.description": "Voz profissional, feminina e jovem e para dar vida a seus projetos em português (PT-BR) ou inglês",
+        "services.voice-over.description": "Voz profissional, feminina e jovem para dar vida a seus projetos em português (PT-BR) ou inglês",
         "services.voice-over.commercial": "Comercial",
         "services.voice-over.institutional": "Institucional",
         "services.voice-over.cartoon": "Desenho animado",
@@ -184,7 +184,7 @@
         "demos.title": "Demos de Voz",
         "demos.commercial": "Comercial",
         "demos.institutional": "Institucional",
-        "demos.telephone": "Telefone/IVR",
+        "demos.telephone": "Telefone/URA",
         "demos.cartoon": "Desenhos animados",
         "demos.podcast": "Podcast",
         "demos.audio": "Narração",
